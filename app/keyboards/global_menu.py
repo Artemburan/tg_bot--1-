@@ -7,7 +7,6 @@ def global_menu_keyboard_builder():
     builder.button(text="Показати вилікуваних тваринок")
     builder.button(text="Показати всі відгуки")
     builder.button(text="Додати нову тваринку")
-    builder.button(text="Вилікувати тваринку")
     builder.button(text="Додати відгук")
     builder.adjust(1)
     return builder.as_markup()

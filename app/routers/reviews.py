@@ -8,7 +8,6 @@ from app.data import list_files, files_actions
 
 review_router = Router()
 
-
 @review_router.message(F.text == "Показати всі відгуки")
 async def show_reviews(message: Message, state: FSMContext):
     reviews = files_actions.open_file(list_files.REVIEWS)

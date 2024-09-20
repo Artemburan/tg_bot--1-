@@ -64,7 +64,7 @@ async def show_cured_anims(message: Message, state: FSMContext):
     cured_animals = files_actions.open_file(list_files.CURED_ANIMALS)
 
     msg = ""
-    for i, prod in enumerate(cured_animals, start=1):
-        msg += f"{i}. {prod}\n"
+    for i, anim in enumerate(cured_animals, start=1):
+        msg += f"{i}. {anim}\n"
 
     await message.answer(text=msg)
