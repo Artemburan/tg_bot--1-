@@ -1,6 +1,5 @@
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
-
 def global_menu_keyboard_builder():
     builder = ReplyKeyboardBuilder()
     builder.button(text="Показати всіх тваринок")

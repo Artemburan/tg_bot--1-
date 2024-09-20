@@ -66,5 +66,6 @@ async def show_cured_anims(message: Message, state: FSMContext):
     msg = ""
     for i, anim in enumerate(cured_animals, start=1):
         msg += f"{i}. {anim}\n"
-
+    if not msg:
+        msg = "Список вилікуваних тварин пустий"
     await message.answer(text=msg)

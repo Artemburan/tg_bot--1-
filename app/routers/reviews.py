@@ -25,7 +25,6 @@ async def add_review(message: Message, state: FSMContext):
     await state.set_state(ReviewForm.text)
     await message.answer(text="Введіть свій відгук")
 
-
 @review_router.message(ReviewForm.text)
 async def save_new_review(message: Message, state: FSMContext):
     data = await state.update_data(text=message.text)

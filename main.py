@@ -10,6 +10,7 @@ from app.routers.start import start_router
 from app.routers.animals import anims_router
 from app.routers.reviews import review_router
 
+
 load_dotenv()
 
 root_router = Router()
